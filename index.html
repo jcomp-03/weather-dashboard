@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">My Personal Weather Dashboard</h1>
+    </header>
+    
+    <main>
+        <div class="city-search">
+            My form, form title, and previous city searches will go inside
+            this div. The div will be a flex container with flex-direction: column
+            possibly.
+            <form id="id-weather-form" class="">
+                <label for="id-input-location">Search Weather by City,State (i.e. Orlando,FL)</label><br>
+                <input type="text" name="input-location" id="id-input-location" class="" /><br>
+                <button type="submit" class="">Search now</button>
+            </form>
+            
+        </div>
+        <div class="city-weather">
+            This div will hold the city weather information, as well as the 5-day forecast
+            below the current weather. Consider using Bootstrap cards for 5-day forecast
+            portion
+        </div>
+
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

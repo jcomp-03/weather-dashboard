@@ -1,0 +1,35 @@
+:root {
+    --primary: black;
+    --secondary: red;
+    --tertiary: green;
+}
+
+/* ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border: solid 2px var(--primary);
+}
+
+div {
+    border: solid 2px var(--secondary);
+}
+
+main {
+    border: solid 2px var(--tertiary);
+    padding: 2vw;
+    display: flex;
+}
+
+.city-search {
+    display:inherit;
+    flex-direction: column;
+}
+
+#id-weather-form {
+    border: solid 2px var(--primary);
+}
