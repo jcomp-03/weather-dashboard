@@ -21,13 +21,13 @@ div {
 
 main {
     border: solid 2px var(--tertiary);
-    padding: 2vw;
-    display: flex;
+    /* padding: 2vw; */
+    /* display: flex; */
 }
 
 .city-search {
-    display:inherit;
-    flex-direction: column;
+    /* display:inherit; */
+    /* flex-direction: column; */
 }
 
 #id-weather-form {
