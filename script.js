@@ -1,6 +1,6 @@
 // assign DOM elements to JavaScript variables
-var userFormEl = document.querySelector("#id-weather-form");
-var userInputEl = document.querySelector("#id-input-location");
+var userFormEl = document.querySelector("#form");
+var userInputEl = document.querySelector("#input-location");
 
 // store openweather API key in variable
 const myWeatherApiKey = "&appid=db5c0fd2b45b6f4bb5fa58e25f4eec1d";
