@@ -32,25 +32,30 @@
                     </button>
                 </form>
 
-                <div class="col-12 col-md-8 col-lg-12 d-flex flex-column align-self-center border border-3 my-4" id="previous-cities-div">
+                <div class="col-12 col-md-8 col-lg-12 d-flex flex-column align-self-center border border-3 my-4"
+                    id="previous-cities-div">
                     Previous cities searched
                     <button>Atlanta</button>
                     <button>Des Moines</button>
                 </div>
             </div>
 
-            <div class="col-12 col-md-10 col-lg d-flex flex-column border border-2 border-danger">
+            <div class="col-12 col-md-10 col-lg d-flex flex-column">
                 <div id="current-city-div">
                     <p class="" id="city-header">
                         City, State, Country (approximate lat/long:)
                     </p>
                     <hr>
-                    <ul id="city-list">
-                        <li class="">Temperature: XXX (feels like XXX)</li>
-                        <li class="">Humidity: XXX</li>
-                        <li class="">Wind speed: XXX</li>
-                        <li class="">UV index: XXX</li>
-                    </ul>
+                    <div class="d-flex">
+                        <ul id="city-list">
+                            <li class="">Temperature: XXX (feels like XXX)</li>
+                            <li class="">Humidity: XXX</li>
+                            <li class="">Wind speed: XXX</li>
+                            <li class="">UV index: XXX</li>
+                        </ul>
+                        <img class="border" src="http://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+
                     <hr>
                 </div>
 
@@ -59,6 +64,7 @@
                         5-Day Forecast As Follows
                     <p>
                     <div class="row justify-content-center border border-3 border-info">
+
                         <div class="card col-10 col-sm-5 col-lg-3 mx-sm-1 my-sm-2 class-card">
                             <div class="card-header class-card-header">
                                 04/17/2022

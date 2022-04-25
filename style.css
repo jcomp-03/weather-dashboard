@@ -12,11 +12,11 @@
 }
 
 header {
-    border: solid 2px var(--primary);
+    /* border: solid 2px var(--primary); */
 }
 
 main {
-    border: solid 2px var(--tertiary);
+    /* border: solid 2px var(--tertiary); */
 }
 
 #page-header {
