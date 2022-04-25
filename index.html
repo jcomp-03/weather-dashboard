@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1 class="text-center display-1 fw-bolder" id="id-page-header">
+        <h1 class="text-center display-1 fw-bolder" id="page-header">
             The Weather Dashboard
         </h1>
     </header>
@@ -22,17 +22,17 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-4 d-flex flex-column">
                 <form class="d-flex flex-lg-column" id="form">
-                    <label class="h4 text-center p-2 mb-2" for="id-input-location">
-                        Search by City,State,Country (i.e. Orlando,FL,USA)
+                    <label class="h4 text-center p-2 mb-2" for="input-location">
+                        Search by City,State,Country (i.e. Orlando,Florida,USA)
                     </label>
                     <input class="w-100" placeholder="Enter location here" type="text" name="input-location"
                         id="input-location" class="" />
-                    <button class="btn btn-success flex-lg-grow-1" id="id-submit-button" type="submit">
+                    <button class="btn btn-success flex-lg-grow-1" id="submit-button" type="submit">
                         Search now
                     </button>
                 </form>
 
-                <div class="col-12 col-md-8 col-lg-12 d-flex flex-column align-self-center border border-3 my-4">
+                <div class="col-12 col-md-8 col-lg-12 d-flex flex-column align-self-center border border-3 my-4" id="previous-cities-div">
                     Previous cities searched
                     <button>Atlanta</button>
                     <button>Des Moines</button>
@@ -40,16 +40,16 @@
             </div>
 
             <div class="col-12 col-md-10 col-lg d-flex flex-column border border-2 border-danger">
-                <div>
-                    <p class="" id="id-city-header">
+                <div id="current-city-div">
+                    <p class="" id="city-header">
                         City, State, Country (approximate lat/long:)
                     </p>
                     <hr>
-                    <ul id="id-city-list border">
-                        <li class="class-li-">Temperature: XXX (feels like XXX)</li>
-                        <li class="class-li-">Humidity: XXX</li>
-                        <li class="class-li-">Wind speed: XXX</li>
-                        <li class="class-li-">UV index: XXX</li>
+                    <ul id="city-list">
+                        <li class="">Temperature: XXX (feels like XXX)</li>
+                        <li class="">Humidity: XXX</li>
+                        <li class="">Wind speed: XXX</li>
+                        <li class="">UV index: XXX</li>
                     </ul>
                     <hr>
                 </div>

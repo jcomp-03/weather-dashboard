@@ -19,7 +19,7 @@ main {
     border: solid 2px var(--tertiary);
 }
 
-#id-page-header {
+#page-header {
     background: url(./images/weather-banner2.png) 0 0 / cover no-repeat;
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -29,11 +29,11 @@ main {
     border: solid 2px var(--primary);
 }
 
-#id-submit-button {
+#submit-button {
     min-width: 25%;
 }
 
-#id-city-header {
+#city-header {
     font-size: 1.5em;
     font-weight: bold;
     text-align: left;
@@ -94,7 +94,7 @@ i {
 
 /***** MEDIA QUERY FOR DESKTOP SCREEN AND LARGER *****/
 @media screen and (min-width: 992px) {
-    #id-page-header{
+    #page-header{
         background-position: 50%;
     }
 }
