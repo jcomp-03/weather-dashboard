@@ -11,26 +11,18 @@
     box-sizing: border-box;
 }
 
-header {
-    /* border: solid 2px var(--primary); */
-}
-
-main {
-    /* border: solid 2px var(--tertiary); */
-}
-
 #page-header {
     background: url(./images/weather-banner2.png) 0 0 / cover no-repeat;
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
-#form {
-    border: solid 2px var(--primary);
+#input-label {
+    min-width: 35%;
+    font-size: 0.75em;
 }
 
 #submit-button {
     min-width: 25%;
+    font-size: 0.75em;
 }
 
 #city-header {
@@ -39,13 +31,25 @@ main {
     text-align: left;
 }
 
+#city-list {
+    max-height: 250px;
+    margin-bottom: 0px;
+}
+
+#city-list li {
+    font-size: 1.5em;
+}
+
+#city-list + img {
+    max-width: 250px;
+}
+
 #id-forecast-header {
-    font-size: 3em;
+    font-size: 2.25em;
     font-weight: bold;
 }
 
 .class-card {
-    /* max-width: 13em; */
     background-color: darkgoldenrod;
 }
 
@@ -55,13 +59,6 @@ main {
     color: blanchedalmond;
     text-align: center;
     border: none;
-}
-
-i {
-    /* border: solid black 1px; */
-    font-size: 12em;
-    text-align: center;
-    color: skyblue
 }
 
 .class-card-body {
@@ -84,12 +81,16 @@ i {
 
 /***** MEDIA QUERY FOR MOBILE AND LARGER *****/
 @media screen and (min-width: 576px) {
-
+    #input-label, #submit-button, #previous-cities-div {
+        font-size: 1em;
+    }
 }
 
 /***** MEDIA QUERY FOR TABLET AND LARGER *****/
 @media screen and (min-width: 768px) {
-
+    #input-label, #submit-button, #previous-cities-div {
+        font-size: 1.25em;
+    }
 }
 
 /***** MEDIA QUERY FOR DESKTOP SCREEN AND LARGER *****/
