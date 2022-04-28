@@ -17,6 +17,7 @@ Date.prototype.addDays = function (days) {
     return date;
 }
 
+// event listener for button
 async function repeatSearchAndDisplay(e){
     let array = e.target.innerText.split(',').map(string => string.trim());
     let locationObject = await getLocationWeatherObject(array);
@@ -24,6 +25,7 @@ async function repeatSearchAndDisplay(e){
     displayWeather(weatherData, locationObject.locationString);
 }
 
+// add buttons for user to easily search previous cities
 function addToPreviousCitiesDiv(locationString){
     var locationBtn = document.createElement("button");
     locationBtn.innerText = locationString;
@@ -45,6 +47,7 @@ var checkSyntaxAndReturnArray = function (location) {
     }
 }
 
+// get the weather object
 async function getLocationWeatherObject(locationArray) {
     // console.log('Inside getLocationWeatherObject');
     const weatherUrl = "https://api.openweathermap.org/data/2.5/weather";
@@ -83,6 +86,7 @@ async function getCurrentAndForecastWeather(locationObj) {
     }
 };
 
+// display the weather to the user
 function displayWeather(weatherObj, inputLocation) {
     const today = new Date();
     const t0 = today.toDateString().split(' ').slice(1).join(' ');
